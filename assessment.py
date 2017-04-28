@@ -86,15 +86,15 @@ def word_length_sorted(words):
         [(2, ['ok']), (9, ['porcupine'])]
     """
 
-    # word_dict = {}
+    word_dict = {}
 
-    # for word in words:
-    #     word_length = len(word)
-    #     word_dict[word_length] = word_dict.get(word_length, [])
-    #     word_dict[word_length].append(word)
-    #     word_dict[word_length].sort()
+    for word in words:
+        word_length = len(word)
+        word_dict[word_length] = word_dict.get(word_length, [])
+        word_dict[word_length].append(word)
+        word_dict[word_length].sort()
 
-    # return sorted(word_dict.items())
+    return sorted(word_dict.items())
 
 
 
@@ -137,8 +137,6 @@ def translate_to_pirate_talk(phrase):
         'me swabbie be not a man!'
     """
 
-    pirate_dict = 
-    phrase.split()
     return ""
 
 
